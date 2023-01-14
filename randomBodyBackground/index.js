@@ -6,7 +6,7 @@ let container = document.createElement('button');
 let content = document.createTextNode('Change Color');
 container.appendChild(content);
 document.body.appendChild(container);
-console.log(container);
+// console.log(container);
 
 // container.classList.add("btn")
 container.setAttribute('id','btn');
