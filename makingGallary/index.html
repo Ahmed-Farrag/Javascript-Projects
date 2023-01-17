@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Making Gallary</title>
+    <style>
+      body {
+        background-color: #222;
+      }
+      .thumbnail img {
+        width: 200px;
+        height: 130px;
+        margin: 5px;
+        border: 2px solid #ddd;
+        border-radius: 10px;
+      }
+      .thumbnail img:hover {
+        border: 2px solid#888;
+        cursor: pointer;
+      }
+      .preview img {
+        width: 800px;
+        height: 500px;
+        border: 2px solid #fff;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gallery">
+      <div class="thumbnail">
+        <img
+          onmouseover="preview.src = img1.src"
+          src="https://images.unsplash.com/photo-1598729512070-b2ee1524ce13?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2Njc5ODY0NjI&ixlib=rb-4.0.3&q=80"
+          name="img1"
+          alt=""
+        />
+        <img
+          onmouseover="preview.src = img2.src"
+          src="https://images.unsplash.com/photo-1612436524004-4f90d7fe71a5?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2Njc5ODY0NjI&ixlib=rb-4.0.3&q=80"
+          name="img2"
+          alt=""
+        />
+        <img
+          onmouseover="preview.src = img3.src"
+          src="https://images.unsplash.com/photo-1585543253202-04d3d9f11961?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2Njc5ODY0NjI&ixlib=rb-4.0.3&q=80"
+          name="img3"
+          alt=""
+        />
+        <img
+          onmouseover="preview.src = img4.src"
+          src="https://images.unsplash.com/photo-1617889782458-c58f15a83c0b?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2Njc5ODY0NjI&ixlib=rb-4.0.3&q=80"
+          name="img4"
+          alt=""
+        />
+      </div>
+      <div class="preview">
+        <img src="images/img1.jpg" name="preview" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
