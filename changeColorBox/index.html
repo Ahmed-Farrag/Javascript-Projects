@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Color Box</title>
+    <style>
+      div {
+        width: 70px;
+        height: 69px;
+        float: left;
+        margin: 5px;
+        border-radius: 10px;
+      }
+      .div1 {
+        background: #f40;
+      }
+      .div2 {
+        background: #080;
+      }
+      .div3 {
+        background: #ff7fa5;
+      }
+      .div4 {
+        background: #00f;
+      }
+
+      #color {
+        background-color: white;
+        border: 1px solid #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1" onclick="colorChange('#f40')"></div>
+    <div class="div2" onclick="colorChange('#080')"></div>
+    <div class="div3" onclick="colorChange('#FF7FA5')"></div>
+    <div class="div4" onclick="colorChange('#00f')"></div>
+
+    <div id="color"></div>
+    <script src="index.js"></script>
+  </body>
+</html>
