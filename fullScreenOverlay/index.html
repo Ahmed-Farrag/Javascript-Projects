@@ -5,7 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Full Screen Overlay</title>
-    <link rel="stylesheet" href="index.css">
+    <style>
+      .overlay {
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        transform: scale(0);
+        transition: 0.5s;
+      }
+      span {
+        font-size: 100px;
+        font-weight: bolder;
+        cursor: pointer;
+        color: red;
+      }
+      .content {
+        text-align: center;
+        position: relative;
+        top: 25%;
+        margin-top: 4%;
+      }
+      .overlay a {
+        text-decoration: none;
+        color: #fff;
+        display: block;
+        font-size: 30px;
+        margin-bottom: 2%;
+      }
+      .overlay .close {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        font-size: 60px;
+      }
+    </style>
   </head>
   <body>
     <!-- overlay Dev -->

@@ -1,25 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo App</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=poppins&amp;display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-</head>
-<body>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=poppins&amp;display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #03ba9a;
+        height: 100v;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "poppins", sans-serif;
+      }
+      .container {
+        width: 250px;
+        height: 400px;
+        background-color: white;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0px 30px 55px 2px rgba(0, 0, 0, 0.46);
+        display: flex;
+        flex-direction: column;
+        cursor: default;
+        margin-top: 50px;
+      }
+      .title {
+        width: 100%;
+        height: 25%;
+        background: url(https://source.unsplash.com/user/natural/250x100);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px 20px 0 0px;
+      }
+      .addSection {
+        width: 100%;
+        height: 15%;
+        display: flex;
+        border-bottom: 1px solid #dbdbdb;
+      }
+      .taskInput {
+        margin: 10px 0 10px 10px;
+        padding: 10px;
+        width: 180px;
+        height: 40px;
+        border-radius: 15px 0 15px;
+        border: 1px solid #dbdbdb;
+        border-right: none;
+        outline: none;
+      }
+      .add {
+        width: 60px;
+        height: 40px;
+        margin: 10px 10px 10px 0;
+        background-color: #f7b71d;
+        color: white;
+        border: none;
+        border-radius: 0 10px 15px 0;
+        outline: none;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+      }
+      .add:hover {
+        background-color: #ffa600;
+      }
+      .list {
+        width: 100%;
+        height: 60%;
+        padding: 0 10px 10px 10px;
+        overflow: auto;
+      }
+
+      /*Dom Element*/
+      .taskContainer {
+        border-bottom: 1px solid #dbdbdb;
+        padding: 5px 0 5px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .task {
+        width: 170px;
+      }
+      .i.fas.fa-check,
+      i.fas.fa-trash-alt {
+        opacity: 0;
+        cursor: pointer;
+        transition: all 0.1s ease-in-out;
+      }
+      .i.fas.fa-check:hover {
+        color: #0c9463;
+      }
+      i.fas.fa-trash-alt:hover {
+        color: #ff0000;
+      }
+      .i.fas.fa-check:active,
+      i.fas.fa-trash-alt:active {
+        transform: translateY(3px);
+      }
+      .taskContainer:hover
+        .i.fas.fa-check
+        .taskContainer:hover
+        i.fas.fa-trash-alt {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
     <div class="container">
-        <div class="title">
-            <h1>Todo App</h1>
-        </div>
-        <div class="addSection">
-            <input type="text" class="taskInput" placeholder="what are you planning?">
-            <button class="add">ADD</button>
-        </div>
-        <div class="list"></div>
+      <div class="title">
+        <h1>Todo App</h1>
+      </div>
+      <div class="addSection">
+        <input
+          type="text"
+          class="taskInput"
+          placeholder="what are you planning?"
+        />
+        <button class="add">ADD</button>
+      </div>
+      <div class="list"></div>
     </div>
 
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
